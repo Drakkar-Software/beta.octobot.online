@@ -5,7 +5,7 @@ import {
   Spacer
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import Form from "./Form"
+import BetaForm from "./BetaForm"
 import OctoBotLogo from "./OctoBotLogo"
 import theme from "./theme/theme"
 
@@ -27,7 +27,7 @@ export const App = () => {
         alignItems="center"
         justifyContent="center"
         pt='4px'>
-        <Form />
+        <BetaForm />
       </Flex>
     </ChakraProvider>
   )
