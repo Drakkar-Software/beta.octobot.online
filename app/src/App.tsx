@@ -1,22 +1,34 @@
-import * as React from "react"
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
+  Flex,
+  Spacer
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
+import Form from "./Form"
+import OctoBotLogo from "./OctoBotLogo"
+import theme from "./theme/theme"
 
-export const App = () => (
-  <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-      </Grid>
-    </Box>
-  </ChakraProvider>
-)
+export const App = () => {
+  return (
+    <ChakraProvider theme={theme}>
+      <Flex pb='4px'>
+        <Box w='150px'>
+          <OctoBotLogo />
+        </Box>
+        <Spacer />
+        <Box
+          pt='4px'
+          pb='4px'>
+          <ColorModeSwitcher justifySelf="flex-end" />
+        </Box>
+      </Flex>
+      <Flex 
+        alignItems="center"
+        justifyContent="center"
+        pt='4px'>
+        <Form />
+      </Flex>
+    </ChakraProvider>
+  )
+}
