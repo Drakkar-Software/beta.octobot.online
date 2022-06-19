@@ -1,6 +1,6 @@
 import { ColorModeScript } from "@chakra-ui/react"
 import * as React from "react"
-import * as ReactDOM from "react-dom/client"
+import * as ReactDOM from "react-dom/client";
 import { App } from "./App"
 
 
@@ -14,4 +14,3 @@ root.render(
     <App />
   </React.StrictMode>,
 )
-
