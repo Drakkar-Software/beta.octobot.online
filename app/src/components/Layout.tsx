@@ -12,7 +12,7 @@ interface Props {
 export const Layout: FC<Props> = ({ title, children }) => {
     return (
         <ChakraProvider theme={theme}>
-            <Seo title={title}/>
+            <Seo title={title} />
             <Navbar />
             <main>{children}</main>
             {/* <footer>© {new Date().getFullYear()}, Built with {` `}<a href="https://www.gatsbyjs.com">Gatsby</a></footer> */}
