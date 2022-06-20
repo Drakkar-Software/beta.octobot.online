@@ -58,8 +58,8 @@ function BetaForm() {
               setSubmitting(true);
               setMessage('')
               fetch("https://i.prefinery.com/projects/tanbi7sc/users/instant?email=" + values.email +
-              "&telegramUsername=" + values.telegramUsername +
-              "&discordUsername=" + values.discordUsername, 
+              "&first_name=" + values.telegramUsername +
+              "&last_name=" + values.discordUsername, 
               {mode:'no-cors'})
               setDisabled(true)
               setMessage("Please confirm your email by clicking on a link sent to " + values.email)
