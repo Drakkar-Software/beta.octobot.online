@@ -5,7 +5,7 @@ import { ThankYou } from "../components/ThankYou"
 
 const SubscribedPage = () => {
   return (
-    <Layout>
+    <Layout title="Subscribed">
       <Flex
         alignItems="center"
         justifyContent="center"

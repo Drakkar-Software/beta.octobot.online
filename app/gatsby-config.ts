@@ -2,14 +2,23 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `OctoBot beta`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `OctoBot Beta`,
+    siteUrl: `https://beta.octobot.online`
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-sitemap"]
+  plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'OctoBot Beta',
+        short_name: 'OctoBot Beta',
+        start_url: '/',
+        display: 'standalone',
+        icon: 'src/images/logo.png',
+      },
+    },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap"]
 };
 
 export default config;
