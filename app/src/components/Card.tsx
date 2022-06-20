@@ -1,5 +1,6 @@
 import {FC} from 'react'
 import { Box, useStyleConfig } from "@chakra-ui/react";
+import React from 'react';
 
 export interface CardProps {
   variant?: 'flat' | 'slim' | 'ghost' | 'naked'

@@ -10,6 +10,7 @@ import {
 import Card from "./Card";
 import { Field, FieldProps, Form, Formik, FormikHelpers, FormikProps } from "formik";
 import { useState } from "react";
+import React from "react";
 
 interface BetaFormValues {
   email: string;

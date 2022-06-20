@@ -1,4 +1,5 @@
 import { useColorModeValue } from "@chakra-ui/react";
+import React from "react";
 
 const OctoBotLogo = ({ className = '', ...props }) => {
     let fill = useColorModeValue("gray.900", "white");
